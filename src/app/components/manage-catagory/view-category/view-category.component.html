@@ -1,0 +1,33 @@
+<div class="card">
+    <div class="card-header">
+        Category Detail
+    </div>
+    <div class="card-body">
+        <a routerLink="/categories" class="btn btn-secondary">Back</a>
+    </div>
+    <div class="row mt-5 w-50 container">
+        <table class="table table-bordered border-all" *ngIf="category">
+            <tr>
+                <td>ID</td>
+                <td>{{category._id}}</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>{{category.name}}</td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td>{{category.description}}</td>
+            </tr>
+            <tr>
+                <td>Created At</td>
+                <td>{{category.createdAt | date : 'dd/MM/yyyy HH:mm a'}}</td>
+            </tr>
+            <tr>
+                <td>Updated At</td>
+                <td>{{category.updatedAt | date : 'dd/MM/yyyy HH:mm a'}}</td>
+            </tr>
+        </table>
+
+    </div>
+</div>

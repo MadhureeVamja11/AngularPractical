@@ -1,0 +1,8 @@
+<div>
+    <div class="col-11 mt-5" style="margin:0 auto;">
+        <div class="align-right mb-2" *ngIf="isLoggedIn()">
+            <button class="btn btn-danger" (click)="logout()">Log out</button>
+        </div>
+        <router-outlet></router-outlet>
+    </div>
+</div>
